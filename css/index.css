@@ -1,0 +1,257 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=Alegreya');
+</style>
+
+body {
+	max-width: 700px;
+    margin: 0 auto;
+    background-color: white;
+    font-size: 15px;
+    padding: 0;
+}
+.container{
+	max-width: 700px;
+    margin: 0 auto;
+}
+
+
+header {
+	background: url(../img/marichkagiy_back.jpg) no-repeat center top / cover;
+	padding-bottom: 150px;
+	height: 276px:
+}
+
+@media (max-width: 700px) {
+	.header {
+		background: url(../img/marichkagiy_back.jpg) no-repeat center top / cover;
+	}
+}
+
+@media (max-width: 400px) {
+	.header {
+		background: url(../img/marichkagiy_back_mob.jpg) no-repeat center top / cover;
+	}
+}
+nav {
+	float: left;
+	margin-right: 20px;
+	margin-top: 35px;
+}
+.menu {
+	padding: 0;
+	margin: 0;
+	display: block;
+}
+.menu li {
+	display: inline;
+	float: center;
+	font-size: 12px;
+	font-weight: 500;
+	padding: 5px 10px;
+	border-radius: 30px;
+}
+.menu li a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.menu li:hover {
+	padding: 5px 10px;
+	border-radius: 30px;
+	background: #f70e7b;
+}
+.burger {
+	display: none;
+	float: right;
+	margin-right: 15px;
+	margin-top: 25px;
+}
+
+.menuMobile img {
+	width: 100px;
+	margin: 0px auto;
+}
+@media screen and (max-width: 700px) {
+	nav {
+		display: none;
+	}
+	.menuMobile {
+		display: block;
+	}
+	menuBurger li {
+		display: block;
+	}
+	.menu li {
+		display: block;
+	}
+}
+
+
+
+
+
+.titles_first{
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 40px;
+	text-align: center;
+	margin-top: 100px;
+}
+h1 {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 20px;
+	text-align: center;
+	margin: 0;
+}
+.button {
+	background: #f70e7b;
+	width: 150px;
+	display: block;
+	border-radius: 30px;
+	padding: 10px 0px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin: 0 auto;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 50px;
+}
+
+.title {
+	padding-top: 10px;
+}
+.title h2 {
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	color: #f70e7b;
+	margin: 0;
+}
+.title p {
+	text-align: center;
+	font-size: 16px;
+	margin: 0;
+}
+.aboutMeGrid {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	margin: 20px;
+	margin-top: 0px;
+}
+.list {
+	padding: 0px;
+	margin-top: 0px;
+}
+.list li {
+	
+}
+
+@media (max-width: 700px) {
+	.aboutMeGrid {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 50% 50%;
+		margin: 20px;
+		margin-top: 0px;
+	}
+	.photoMarichka {
+		grid-column: 1;
+		grid-row: 1;
+	}
+	.list {
+		grid-column: 1/2;
+		grid-row: 1;
+	}
+}
+@media (max-width: 400px) {
+
+	.aboutMeGrid {
+		display: block;
+		margin: 20px auto;
+		margin-left: 30px;
+		margin-top: 0px;
+	}
+	.list {
+		margin-left: 30px;
+		margin-top: 0px;
+	}
+}
+.programaGrid {
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	margin: 20px;
+	margin-top: 0px;
+}
+@media (max-width: 700px) {
+	.programaGrid {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 50% 50%;
+		margin: 20px;
+		margin-top: 0px;
+	}
+}
+@media (max-width: 400px) {
+	.programaGrid {
+		display: block;
+		margin: 20px auto;
+		margin-top: 0px;
+	}
+}
+.prog {
+	padding: 10px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.prog img {
+	width: 150px;
+}
+
+#advices {
+	background-color: #b4b6ba;
+}
+
+
+
+footer {
+    background-color: #f70e7b;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+    color: black;
+    margin: 0;
+}
+footer p {
+    text-align: center;
+    font-size: 1.5em;
+    color: black;
+    margin: auto;
+    
+}
+ #contact-form {
+ 	width: 350px;
+ 	height: 400px;
+ 	background-color: #b4b6ba;
+ 	margin: 250px auto 0 auto;
+ 	text-align: center;
+ }
+ input {
+ width: 200px;
+ height: 20px;
+ font-size: 18px;
+ margin-bottom: 15px;
+ border-radius: 5px;
+ padding-left: 10px;
+}
+.container img{
+	width: 100px;
+	text-align: center;
+}
