@@ -1,7 +1,6 @@
 <style>
-@import url('https://fonts.googleapis.com/css?family=Alegreya');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 </style>
-
 body {
 	max-width: 700px;
     margin: 0 auto;
@@ -13,96 +12,77 @@ body {
 	max-width: 700px;
     margin: 0 auto;
 }
-
-
 header {
 	background: url(../img/marichkagiy_back.jpg) no-repeat center top / cover;
 	padding-bottom: 150px;
-	height: 276px:
+	padding-top: 50px;
+	background-position: right;
 }
-
 @media (max-width: 700px) {
 	.header {
 		background: url(../img/marichkagiy_back.jpg) no-repeat center top / cover;
 	}
 }
-
-@media (max-width: 400px) {
-	.header {
-		background: url(../img/marichkagiy_back_mob.jpg) no-repeat center top / cover;
-	}
+.topnav{
+	max-width: 700px;
+	margin: auto;
 }
-nav {
-	float: left;
-	margin-right: 20px;
-	margin-top: 35px;
-}
-.menu {
-	padding: 0;
-	margin: 0;
-	display: block;
-}
-.menu li {
-	display: inline;
-	float: center;
-	font-size: 12px;
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 13px;
 	font-weight: 500;
-	padding: 5px 10px;
-	border-radius: 30px;
+    text-decoration: none;
 }
-.menu li a {
-	color: #fff;
-	text-decoration: none;
-	text-transform: uppercase;
+.topnav a:hover {
+    background-color: rgba(247, 14, 123, 0.7);
+    border-radius: 30px;
+    color: white;
+    font-size: 17px;
 }
-.menu li:hover {
-	padding: 5px 10px;
-	border-radius: 30px;
-	background: #f70e7b;
-}
-.burger {
-	display: none;
-	float: right;
-	margin-right: 15px;
-	margin-top: 25px;
-}
-
-.menuMobile img {
-	width: 100px;
-	margin: 0px auto;
+.topnav .icon {
+    display: none;
 }
 @media screen and (max-width: 700px) {
-	nav {
-		display: none;
-	}
-	.menuMobile {
-		display: block;
-	}
-	menuBurger li {
-		display: block;
-	}
-	.menu li {
-		display: block;
-	}
+  .topnav a {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
 }
-
-
-
-
-
+@media screen and (max-width: 700px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.titles {
+	max-width: 700px;
+	margin: auto;
+}
 .titles_first{
 	color: #fff;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-size: 40px;
+	font-size: 25px;
 	text-align: center;
-	margin-top: 100px;
+	margin-top: 150px;
 }
 h1 {
 	color: #fff;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-size: 20px;
+	font-size: 15px;
 	text-align: center;
 	margin: 0;
 }
@@ -120,7 +100,6 @@ h1 {
 	font-weight: bold;
 	margin-top: 50px;
 }
-
 .title {
 	padding-top: 10px;
 }
@@ -150,7 +129,10 @@ h1 {
 .list li {
 	
 }
-
+.photoMarichka{
+	display: block;
+	margin: auto;
+}
 @media (max-width: 700px) {
 	.aboutMeGrid {
 		display: grid;
@@ -160,11 +142,11 @@ h1 {
 		margin-top: 0px;
 	}
 	.photoMarichka {
-		grid-column: 1;
+		grid-column: 1/2;
 		grid-row: 1;
 	}
 	.list {
-		grid-column: 1/2;
+		
 		grid-row: 1;
 	}
 }
@@ -180,6 +162,10 @@ h1 {
 		margin-left: 30px;
 		margin-top: 0px;
 	}
+	.photoMarichka{
+	display: block;
+	margin: auto;
+}
 }
 .programaGrid {
 	display: grid;
@@ -217,41 +203,107 @@ h1 {
 #advices {
 	background-color: #b4b6ba;
 }
-
-
-
 footer {
-    background-color: #f70e7b;
+    background-color: black;
     height: 40px;
     font-size: 18px;
     font-weight: bold;
     padding: 20px;
-    color: black;
-    margin: 0;
+    color: #f70e7b;
 }
 footer p {
     text-align: center;
-    font-size: 1.5em;
-    color: black;
-    margin: auto;
+    font-size: 20px;
+    color:  #f70e7b;
+    margin: 10px;
     
 }
- #contact-form {
- 	width: 350px;
- 	height: 400px;
- 	background-color: #b4b6ba;
- 	margin: 250px auto 0 auto;
- 	text-align: center;
- }
- input {
- width: 200px;
- height: 20px;
- font-size: 18px;
- margin-bottom: 15px;
- border-radius: 5px;
- padding-left: 10px;
+.contact {
+	width: 450px;
+	height: 400px;
+	background-color: #b4b6ba;
+    margin: 0px auto 0 auto; 
+    text-align: center;
 }
-.container img{
-	width: 100px;
-	text-align: center;
+input[type="text"], input[type="email"]{
+	width: 200px;
+	height: 20px;
+	font-size: 18px;
+	margin-bottom: 10px;
+	border-radius: 4px;
+	padding-left: 10px;
+}
+textarea{
+	width: 200px;
+	height: 100px;
+	font-size: 18px;
+	margin-bottom: 25px;
+	border-radius: 4px;
+	padding-left: 10px;
+	
+}
+input[type="submit"], [type="reset"] {
+    color: black;
+    border-radius: 4px;
+    font-size: 10px;
+    padding: 5px 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #f70e7b;
+    box-sizing: content-box;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+}
+.contactGrid {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	margin: 20px;
+	margin-top: 0px;
+}
+.findMe {
+	padding: 0px;
+	margin-top: 0px;
+}
+.findMe li {
+	
+}
+#contact-form{
+	display: block;
+	margin: auto;
+}
+@media (max-width: 700px) {
+	.contactGrid {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 50% 50%;
+		margin: 20px;
+		margin-top: 0px;
+	}
+	#contact-form {
+		grid-column: 1/2;
+		grid-row: 1;
+	}
+	.findMe {
+		
+		grid-row: 1;
+	}
+}
+@media (max-width: 400px) {
+
+	.contactGrid {
+		display: block;
+		margin: 20px auto;
+		margin-left: 30px;
+		margin-top: 0px;
+	}
+	.findMe {
+		margin-left: 30px;
+		margin-top: 0px;
+	}
+	#contact-form{
+	display: block;
+	margin: auto;
+}
 }

@@ -9,33 +9,19 @@
 </head>
 <body>
     <header id="intro">
-            <div class="Burger">
-                <a href="#" class="menuMobile">
-                    <img src="img/burger.png" alt="Меню Бугер"   class="burgerImg">
-                </a>
-            </div>
-            <nav class="menuBurger">
-                <ul class="menu">
-                    <li>
-                        <a class="smooth" href="#aboutme">Про мене</a>
-                    </li>
-                    <li>
-                        <a class="smooth" href="#programs">Програми</a>
-                    </li>
-                    <li>
-                        <a class="smooth" href="#advice">Поради</a>
-                    </li>
-                    <li>
-                        <a class="smooth" href="#contactus">Контакти</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="topnav" id="myTopnav">
+             <a class="smooth" href="#aboutme">Про мене</a>
+             <a class="smooth" href="#programs">Програми</a>
+             <a class="smooth" href="#advice">Поради</a>
+             <a class="smooth" href="#contactus">Контакти</a>
+             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
             <div class="titles">
                 <div class="titles_first">
                     Ти зможеш!
                 </div>
                 <h1>Авторські програми від "найдобрішого" тренера</h1>
-                <a class="button" href="#contact-form">Замовити</a>
+                <a class="button" class="smooth" href="#contactus">Замовити</a>
             </div>
     </header>
     <main>
@@ -134,45 +120,66 @@
                 </div>
             </div>
         </section>
-    </main>
-    <section id="contactus">
-        <div class="container">
-            <div class="title">
-                <h2>Контакти:</h2>
-            </div>
-            <form id="contact-form">
-                <img src="img/smiling-girl.png">
-                <div class="input">
-                    <label>Твоє Ім'я:
-                        <input name="text" type="text" id="name">
-                    </label>
-                    <br>
-                    <label> Твоя пошта:
-                        <input name="email" type="email" id="email">
-                    </label>
-                    <br>
+        <section id="contactus">
+            <div class="container">
+                <div class="title">
+                    <h2>Контакти:</h2>
                 </div>
-                <div class="text">
-                    <label>Твоє повідомлення:
-                    <textarea name="textarea" id="feedback"></textarea>
-                </div>    
-                    </label>
-                    <br>
-                    <input name="submit" type="submit" value="Відправити"> <input name="reset" type=reset value="Скинути">
+                <div class="contactGrid">
+                     <form id="contact-form">
+                <h2> Замовлення:</h2>
+                <label>Твоє Ім'я:
+                        <input type="text" id="name">
+                </label>
+                <br>
+                <label> Твоя пошта:
+                        <input type="email" id="email">
+                </label>
+                <br>
+                <label>Програма:
+                    <select name="desicion">
+                      <option value="desicion1">Харчування</option>
+                      <option value="desicion2">Програма тренувань</option>
+                      <option value="desicion3">Тонус</option>
+                      <option value="desicion4">Супер схуднення</option>
+                    </select>
+                </label>
+                <br>
+                <input type="submit" value="Відправити"> <input type=reset value="Скинути">
             </form>
-            </div>
             <dialog id="thank-dialog">
-                <p>Thank you for contacting us!</p>
+                <p>Дякуємо за Ваше повідомлення!</p>
             </dialog>
             <dialog id="error-dialog">
-                <p>Sorry, an error has occured!</p>
+                <p>Вибачте, виникла помилка!</p>
             </dialog>
-    </section>
+                <div class="findMe">
+                            <ul>
+                                <li>+380 964 76 86 45</li>
+                                <li>fedevych.m@gmail.com</li>
+                                <li>MyGym, вул. Липинського 54</li>
+                            </ul>
+                    <div>
+                        <a href="https://www.facebook.com/marichka.fedevych">
+                        <img href="#https://www.instagram.com/marichkagiy/"src="img/facebook.png" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com/marichkagiy/">
+                        <img src="img/instagram.png" alt="Instagram"> 
+                        </a>
+                        <a href="https://www.linkedin.com/in/marichka-giy-a337a1155/">
+                        <img src="img/linkedin.png" alt="LinkedIn">
+                        </a>
+                    </div>
+                </div>
+            </div>   
+        </section>
+    </main>
     <footer>
-        <p>Copyright MarichkaGiy</p>
+        <p> © Copyright MarichkaGiy</p>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="js/feedback-form.js"></script>
-    <script src="js/smooth-scroll.js"></script>
+            <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+            <script src="js/feedback-form.js"></script>
+            <script src="js/smooth-scroll.js"></script>
+            <script src="js/navBar.js"></script>
 </body>
 </html>
