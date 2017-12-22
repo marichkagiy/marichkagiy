@@ -1,51 +1,62 @@
 <style>
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 </style>
+
 body {
+	background-color: white;
 	max-width: 700px;
     margin: 0 auto;
-    background-color: white;
     font-size: 15px;
     padding: 0;
 }
+
 .container{
 	max-width: 700px;
     margin: 0 auto;
 }
+
 header {
 	background: url(../img/marichkagiy_back.jpg) no-repeat center top / cover;
 	padding-bottom: 150px;
 	padding-top: 50px;
 	background-position: right;
 }
+
 @media (max-width: 700px) {
 	.header {
 		background: url(../img/marichkagiy_back.jpg) no-repeat center top / cover;
 	}
 }
+
 .topnav{
 	max-width: 700px;
 	margin: auto;
 }
+
 .topnav a {
     float: left;
     display: block;
     color: white;
     text-align: center;
-    padding: 5px 10px;
+    padding: 10px 15px;
+    margin-right: 20px;
+    margin-bottom: 10px;
     font-size: 13px;
-	font-weight: 500;
+	font-weight: 900;
     text-decoration: none;
 }
+
 .topnav a:hover {
     background-color: rgba(247, 14, 123, 0.7);
     border-radius: 30px;
     color: white;
     font-size: 17px;
 }
+
 .topnav .icon {
     display: none;
 }
+
 @media screen and (max-width: 700px) {
   .topnav a {display: none;}
   .topnav a.icon {
@@ -53,6 +64,7 @@ header {
     display: block;
   }
 }
+
 @media screen and (max-width: 700px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
@@ -66,10 +78,12 @@ header {
     text-align: left;
   }
 }
+
 .titles {
 	max-width: 700px;
 	margin: auto;
 }
+
 .titles_first{
 	color: #fff;
 	text-decoration: none;
@@ -78,6 +92,7 @@ header {
 	text-align: center;
 	margin-top: 150px;
 }
+
 h1 {
 	color: #fff;
 	text-decoration: none;
@@ -86,6 +101,7 @@ h1 {
 	text-align: center;
 	margin: 0;
 }
+
 .button {
 	background: #f70e7b;
 	width: 150px;
@@ -100,9 +116,11 @@ h1 {
 	font-weight: bold;
 	margin-top: 50px;
 }
+
 .title {
 	padding-top: 10px;
 }
+
 .title h2 {
 	font-size: 40px;
 	font-weight: bold;
@@ -111,28 +129,30 @@ h1 {
 	color: #f70e7b;
 	margin: 0;
 }
+
 .title p {
 	text-align: center;
 	font-size: 16px;
 	margin: 0;
 }
+
 .aboutMeGrid {
 	display: grid;
 	grid-template-columns: 50% 50%;
 	margin: 20px;
 	margin-top: 0px;
 }
+
 .list {
 	padding: 0px;
 	margin-top: 0px;
 }
-.list li {
-	
-}
+
 .photoMarichka{
 	display: block;
 	margin: auto;
 }
+
 @media (max-width: 700px) {
 	.aboutMeGrid {
 		display: grid;
@@ -146,12 +166,11 @@ h1 {
 		grid-row: 1;
 	}
 	.list {
-		
 		grid-row: 1;
 	}
 }
-@media (max-width: 400px) {
 
+@media (max-width: 400px) {
 	.aboutMeGrid {
 		display: block;
 		margin: 20px auto;
@@ -165,14 +184,16 @@ h1 {
 	.photoMarichka{
 	display: block;
 	margin: auto;
+	}
 }
-}
+
 .programaGrid {
 	display: grid;
 	grid-template-columns: 25% 25% 25% 25%;
 	margin: 20px;
 	margin-top: 0px;
 }
+
 @media (max-width: 700px) {
 	.programaGrid {
 		display: grid;
@@ -182,6 +203,7 @@ h1 {
 		margin-top: 0px;
 	}
 }
+
 @media (max-width: 400px) {
 	.programaGrid {
 		display: block;
@@ -189,6 +211,7 @@ h1 {
 		margin-top: 0px;
 	}
 }
+
 .prog {
 	padding: 10px;
 	margin: 0 auto;
@@ -203,6 +226,7 @@ h1 {
 #advices {
 	background-color: #b4b6ba;
 }
+
 footer {
     background-color: black;
     height: 40px;
@@ -211,13 +235,14 @@ footer {
     padding: 20px;
     color: #f70e7b;
 }
+
 footer p {
     text-align: center;
     font-size: 20px;
     color:  #f70e7b;
     margin: 10px;
-    
 }
+
 .contact {
 	width: 450px;
 	height: 400px;
@@ -225,7 +250,8 @@ footer p {
     margin: 0px auto 0 auto; 
     text-align: center;
 }
-input[type="text"], input[type="email"]{
+
+input[type="text"]{
 	width: 200px;
 	height: 20px;
 	font-size: 18px;
@@ -233,6 +259,16 @@ input[type="text"], input[type="email"]{
 	border-radius: 4px;
 	padding-left: 10px;
 }
+
+input[type="email"]{
+	width: 190px;
+	height: 20px;
+	font-size: 18px;
+	margin-bottom: 10px;
+	border-radius: 4px;
+	padding-left: 10px;
+}
+
 textarea{
 	width: 200px;
 	height: 100px;
@@ -240,8 +276,8 @@ textarea{
 	margin-bottom: 25px;
 	border-radius: 4px;
 	padding-left: 10px;
-	
 }
+
 input[type="submit"], [type="reset"] {
     color: black;
     border-radius: 4px;
@@ -256,23 +292,24 @@ input[type="submit"], [type="reset"] {
     outline: none;
     text-align: center;
 }
+
 .contactGrid {
 	display: grid;
 	grid-template-columns: 50% 50%;
 	margin: 20px;
 	margin-top: 0px;
 }
+
 .findMe {
 	padding: 0px;
 	margin-top: 0px;
 }
-.findMe li {
-	
-}
+
 #contact-form{
 	display: block;
 	margin: auto;
 }
+
 @media (max-width: 700px) {
 	.contactGrid {
 		display: grid;
@@ -286,12 +323,11 @@ input[type="submit"], [type="reset"] {
 		grid-row: 1;
 	}
 	.findMe {
-		
 		grid-row: 1;
 	}
 }
-@media (max-width: 400px) {
 
+@media (max-width: 400px) {
 	.contactGrid {
 		display: block;
 		margin: 20px auto;
@@ -305,5 +341,5 @@ input[type="submit"], [type="reset"] {
 	#contact-form{
 	display: block;
 	margin: auto;
-}
+	}
 }
